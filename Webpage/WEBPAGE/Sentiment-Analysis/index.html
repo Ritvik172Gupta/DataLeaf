@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grammar Corrector - DataLeaf</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <section class="nav">
+        <div class="logo">
+            <a href="../LANDING-PAGE/index.html"><img src="../Resources/LOGO/DATALEAF_LOGO.jpeg" alt="Dataleaf Logo"
+                    srcset="" class="Logo"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../PDF-SUMMARIZER/index.html">PDF Summarizer</a></li>
+                <li><a href="../Grammar-Corrector/index.html">Grammar Corrector</a></li>
+                <li><a href="../Sentiment-Analysis/index.html">Sentiment Analysis</a></li>
+                <li><a href="#">FAQ's</a></li>
+            </ul>
+        </nav>
+        <div class="auth-buttons">
+            <a href="../Login-Page/index.html" class="login-btn">Login</a>
+            <a href="../SignUp-Page/index.html" class="signup-btnn">Sign Up</a>
+        </div>
+    </section>
+
+    <!-- Hero Section -->
+    <main>
+        <section class="hero-section">
+            <h1>Analyze Sentiments Instantly</h1>
+            <p>Paste your text below or upload a CSV file</p>
+
+            <!-- New Text Input Area -->
+            <div class="text-input-container">
+                <textarea id="text-input" placeholder="Enter your text here..."></textarea>
+            </div>
+
+            <div class="upload-container">
+                <form id="upload-form" action="#" method="POST" enctype="multipart/form-data">
+                    <div class="upload-box-horizontal" id="upload-box">
+                        <button type="button" class="choose-file-btn"
+                            onclick="document.getElementById('file-upload').click();">Choose File</button>
+                        <input type="file" id="file-upload" name="file" hidden>
+                        <p class="upload-instructions">Click to upload or drag and drop</p>
+                    </div>
+                    <button type="submit" class="analyze-btn">Analyze</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features-section">
+            <h2>Why Use Our Sentiment Analyzer?</h2>
+            <div class="features-grid">
+                <div class="feature-box">
+                    <img src="../Resources/ICONS/fast.png" alt="Fast Icon" class="fast"> 
+                    <h3>Fast Analysis</h3>
+                    <p>Get Sentiment Results in seconds using AI-Powered Algorithms.</p>
+                </div>
+                <div class="feature-box">
+                    <img src="../Resources/ICONS/accuracy.png" alt="Accurate Icon">
+                    <h3>Accurate Insights</h3>
+                    <p>Understand the tone of text with High Accuracy</p>
+                </div>
+                <div class="feature-box">
+                    <img src="../Resources/ICONS/secure.png" alt="Security Icon">
+                    <h3>Secure & Private</h3>
+                    <p>Your Text/File Is Never Stored Or Shared.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- JavaScript -->
+    <script>
+        function correctGrammar() {
+            const inputText = document.getElementById('text-input').value;
+            if (inputText.trim() === "") {
+                alert("Please paste some text to correct.");
+                return;
+            }
+            // Placeholder for AI-based correction (to be implemented)
+            alert("Grammar correction functionality is under development.");
+        }
+    </script>
+</body>
+
+</html>

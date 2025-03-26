@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="nav">
+        <div class="logo">
+            <a href="../LANDING-PAGE/index.html"><img src="../Resources/LOGO/DATALEAF_LOGO.jpeg" alt="Dataleaf Logo" srcset="" class="Logo"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../PDF-SUMMARIZER/index.html">PDF Summarizer</a></li>
+                <li><a href="../Grammar-Corrector/index.html">Grammar Corrector</a></li>
+                <li><a href="../Sentiment-Analysis/index.html">Sentiment Analysis</a></li>
+                <li><a href="#">FAQ's</a></li>
+            </ul>
+        </nav>
+        <div class="auth-buttons">
+            <a href="../Login-Page/index.html" class="login-btn">Login</a>
+            <a href="../SignUp-Page/index.html" class="signup-btn">Sign Up</a>
+        </div>
+    </section>
+
+    <section class="part-1">
+        <div class="heading">
+            <h1>Summarize PDFs Instantly</h1>
+        </div>
+        <div class="sub-heading">
+            <h2>Upload your document and get a concise, accurate summary in seconds</h2>
+        </div>
+    
+        <!-- Upload Section -->
+        <!-- Upload Section -->
+<div class="upload-container">
+    <form id="upload-form" action="#" method="POST" enctype="multipart/form-data">
+        <div class="upload-box" id="upload-box">
+            <input type="file" id="file-upload" name="file" hidden>
+            <button type="button" class="choose-file-btn" onclick="document.getElementById('file-upload').click();">Choose File</button>
+            <span id="file-chosen">No file chosen</span>
+            <p class="upload-instructions">Click To Upload Or Drag And Drop</p>
+        </div>
+        <button type="submit" class="summarize-btn">Summarize</button>
+    </form>
+</div>
+    </section>
+    
+    <!-- Why Use Section -->
+    <section class="why-section">
+        <h2>Why Use Our Summarizer?</h2>
+        <div class="features">
+            <div class="feature-box">
+                <span class="icon">⚡</span>
+                <h3>Fast Processing</h3>
+                <p>Get summaries in seconds with AI-powered algorithms.</p>
+            </div>
+            <div class="feature-box">
+                <span class="icon">🎯</span>
+                <h3>Accurate Summaries</h3>
+                <p>Retain key points without losing meaning.</p>
+            </div>
+            <div class="feature-box">
+                <span class="icon">🔒</span>
+                <h3>Secure & Private</h3>
+                <p>Your files are never stored or shared.</p>
+            </div>
+        </div>
+    </section>
+    
+    
+</body>
+</html>
