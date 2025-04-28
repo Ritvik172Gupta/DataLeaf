@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dataleaf - Empowering Your Text</title>
+    <link rel="icon" href="{{ url_for('static', filename='Resources/ICONS/favicon-removebg-preview.png') }}" type="image/x-icon">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styleSU.css') }}">
+    <script src="{{ url_for('static', filename='script.js') }}" defer></script>
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <section class="nav">
+        <div class="logo">
+            <a href="{{ url_for('home') }}"><img src="{{ url_for('static', filename='Resources/LOGO/DATALEAF_LOGO.jpeg') }}" alt="Dataleaf Logo" class="Logo"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('PDFS') }}">PDF Summarizer</a></li>
+                <li><a href="{{ url_for('GrammarC')}}">Grammar Corrector</a></li>
+                <li><a href="{{ url_for('SentimentA')}}">Sentiment Analysis</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+        <div class="auth-buttons">
+            <a href="{{ url_for('LogIn')}}" class="login-btn">Login</a>
+            <a href="{{ url_for('SignUp')}}" class="signup-btnn">Sign Up</a>
+        </div>
+        <div class="namess">
+        </div>
+    </section>
+
+    <!-- Sign Up Form Section -->
+    <section class="form-sign-up bottom-center">
+        <div class="signup-container">
+            <h1>Sign up</h1>
+            <p class="subheading">Sign Up To Continue</p>
+
+            <form id="signup-form">
+                <div class="name-fields">
+                    <div class="input-group">
+                        <label for="first-name">First Name</label>
+                        <input type="text" id="first-name" />
+                        <span class="error-message" id="first-name-error"></span>
+                    </div>
+                    <div class="input-group">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" id="last-name" />
+                        <span class="error-message" id="last-name-error"></span>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label for="email">Email ID</label>
+                    <input type="email" id="email" />
+                    <span class="error-message" id="email-error"></span>
+                </div>
+
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <div class="password-field">
+                        <input type="password" id="password" />
+                        <span class="toggle-password">👁️</span>
+                    </div>
+                    <span class="error-message" id="password-error"></span>
+                </div>
+
+                <div class="input-group">
+                    <label for="confirm-password">Confirm Password</label>
+                    <input type="password" id="confirm-password" />
+                    <span class="error-message" id="confirm-password-error"></span>
+                </div>
+
+                <button type="submit" class="signup-btn">Sign up</button>
+                <p class="login-link">Already Have An Account? <a href="{{ url_for('LogIn')}}">Log in</a></p>
+            </form>
+
+            <div class="divider">
+                <hr /><span>or</span>
+                <hr />
+            </div>
+
+            <div id="google-signin-btn" class="google-btn"></div>
+        </div>
+    </section>
+</body>
+
+</html>

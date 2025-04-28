@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grammar Corrector - DataLeaf</title>
+    <link rel="icon" href="{{ url_for('static', filename='Resources/ICONS/favicon-removebg-preview.png') }}" type="image/x-icon">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styleG.css') }}">
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <section class="nav">
+        <div class="logo">
+            <a href="{{ url_for('home') }}"><img src="{{ url_for('static', filename='Resources/LOGO/DATALEAF_LOGO.jpeg') }}" alt="Dataleaf Logo" srcset="" class="Logo"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('PDFS') }}">PDF Summarizer</a></li>
+                <li><a href="{{ url_for('GrammarC')}}">Grammar Corrector</a></li>
+                <li><a href="{{ url_for('SentimentA')}}">Sentiment Analysis</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+        <div class="auth-buttons">
+            <a href="{{ url_for('LogIn')}}" class="login-btn">Login</a>
+            <a href="{{ url_for('SignUp')}}" class="signup-btnn">Sign Up</a>
+        </div>
+        <div class="namess">
+        </div>
+    </section>
+
+    <!-- Hero Section -->
+    <main>
+        <section class="hero-section">
+            <h1>Improve Your Writing Instantly</h1>
+            <p>Paste Your Text And Let Us Correct Your Grammar, Spelling, And Punctuation.</p>
+            
+            <div class="text-correct-container">
+                <textarea id="text-input" placeholder="The text should not be longer than 256-words. Paste Your Text Here ..."></textarea>
+                <button class="correct-btn" onclick="correctGrammar()">Correct</button>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features-section">
+            <h2>Why Use Our Grammar Corrector?</h2>
+            <div class="features-grid">
+                <div class="feature-box">
+                    <img src="{{ url_for('static', filename='Resources/ICONS/accuracy.png')}}" alt="Accuracy Icon">
+                    <h3>Accurate Corrections</h3>
+                    <p>Powered Grammar Checking For Precise Results.</p>
+                </div>
+                <div class="feature-box">
+                    <img src="{{ url_for('static', filename='Resources/ICONS/instant-feedback.png')}}" alt="Feedback Icon">
+                    <h3>Instant Feedback</h3>
+                    <p>Real-Time Corrections For Your Text.</p>
+                </div>
+                <div class="feature-box">
+                    <img src="{{ url_for('static', filename='Resources/ICONS/secure.png')}}" alt="Security Icon">
+                    <h3>Secure & Private</h3>
+                    <p>Your Text Is Never Stored Or Shared.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- JavaScript -->
+    <!-- <script>
+        function correctGrammar() {
+            const inputText = document.getElementById('text-input').value;
+            if (inputText.trim() === "") {
+                alert("Please paste some text to correct.");
+                return;
+            }
+            // Placeholder for AI-based correction (to be implemented)
+            alert("Grammar correction functionality is under development.");
+        }
+    </script> -->
+</body>
+</html>

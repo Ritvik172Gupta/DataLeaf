@@ -1,0 +1,64 @@
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dataleaf - Empowering Your Text</title>
+    <link rel="icon" href="{{ url_for('static', filename='Resources/ICONS/favicon-removebg-preview.png') }}" type="image/x-icon">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</head>
+<body>
+    <section class="nav">
+        <div class="logo">
+            <a href="{{ url_for('home') }}">
+                <img src="{{ url_for('static', filename='Resources/LOGO/DATALEAF_LOGO.jpeg') }}" alt="Dataleaf Logo">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('PDFS') }}">PDF Summarizer</a></li>
+                <li><a href="{{ url_for('GrammarC')}}">Grammar Corrector</a></li>
+                <li><a href="{{ url_for('SentimentA')}}">Sentiment Analysis</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+        <div class="auth-buttons">
+            <a href="{{ url_for('LogIn') }}" class="login-btn">Login</a>
+            <a href="{{ url_for('SignUp') }}" class="signup-btn">Sign Up</a>
+        </div>
+        <div class="namess">
+        </div>
+    </section>
+    
+
+    <section class="main">
+        <h1>" Nurture Your Data, Grow Your Success "</h1>
+
+    <div class="container">
+       <a href="{{ url_for('PDFS') }}"> 
+            <div class="card">
+                <h2>PDF Summarizer</h2>
+                <img src="{{ url_for('static', filename='Resources/ICONS/pdf_icon.png') }}" alt="PDF Icon">
+            </div>
+        </a>
+        <a href="{{ url_for('GrammarC')}}">
+            <div class="card">
+                <h2>Grammar Corrector</h2>
+                <img src="{{ url_for('static', filename='Resources/ICONS/grammar_icon.png') }}" alt="Grammar Icon">
+            </div>
+        </a>
+    </div>
+
+    <div class="container bottom-center">
+        <a href="{{ url_for('SentimentA')}}">
+            <div class="card">
+                <h2>Sentiment Analysis</h2>
+                <img src="{{ url_for('static', filename='Resources/ICONS/sentiment.png') }}" alt="Sentiment Icon">
+            </div>
+        </a>
+    </div>
+    </section>
+</body>    
+</html>

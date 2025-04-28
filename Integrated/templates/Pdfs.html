@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Summarizer - DataLeaf</title>
+    <link rel="icon" href="{{ url_for('static', filename='Resources/ICONS/favicon-removebg-preview.png') }}" type="image/x-icon">
+    <link rel="stylesheet" href="{{ url_for('static', filename='stylePS.css') }}">
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</head>
+<body>
+    <section class="nav">
+        <div class="logo">
+            <a href="{{ url_for('home') }}"><img src="{{ url_for('static', filename='Resources/LOGO/DATALEAF_LOGO.jpeg') }}" alt="Dataleaf Logo" srcset="" class="Logo"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('PDFS') }}">PDF Summarizer</a></li>
+                <li><a href="{{ url_for('GrammarC')}}">Grammar Corrector</a></li>
+                <li><a href="{{ url_for('SentimentA')}}">Sentiment Analysis</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+        <div class="auth-buttons">
+            <a href="{{ url_for('LogIn')}}" class="login-btn">Login</a>
+            <a href="{{ url_for('SignUp')}}" class="signup-btn">Sign Up</a>
+        </div>
+        <div class="namess">
+        </div>
+    </section>
+
+    <section class="part-1">
+        <div class="heading">
+            <h1>Summarize PDFs Instantly</h1>
+        </div>
+        <div class="sub-heading">
+            <h2>Upload your document and get a concise, accurate summary in seconds</h2>
+        </div>
+    
+        <!-- Upload Section -->
+<div class="upload-container">
+    <form id="upload-form" enctype="multipart/form-data"> <!--action="#" method="POST"-->
+        <div class="upload-box" id="upload-box">
+            <input type="file" id="file-upload" name="pdfFile" accept=".pdf" hidden>
+            <button type="button" class="choose-file-btn" onclick="document.getElementById('file-upload').click();">Choose File</button>
+            <span id="fileChosen">No file chosen</span>
+            <p class="upload-instructions">Click To Upload Or Drag And Drop</p>
+        </div>
+        <button type="submit" class="summarize-btn" onclick="analysePdf()">Summarize</button>
+    </form>
+</div>
+    </section>
+    
+    <!-- Why Use Section -->
+    <section class="why-section">
+        <h2>Why Use Our Summarizer?</h2>
+        <div class="features">
+            <div class="feature-box">
+                <span class="icon">⚡</span>
+                <h3>Fast Processing</h3>
+                <p>Get summaries in seconds with AI-powered algorithms.</p>
+            </div>
+            <div class="feature-box">
+                <span class="icon">🎯</span>
+                <h3>Accurate Summaries</h3>
+                <p>Retain key points without losing meaning.</p>
+            </div>
+            <div class="feature-box">
+                <span class="icon">🔒</span>
+                <h3>Secure & Private</h3>
+                <p>Your files are safe & never shared.</p>
+            </div>
+        </div>
+    </section>
+    
+    
+</body>
+</html>

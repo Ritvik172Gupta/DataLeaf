@@ -1,0 +1,192 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #e6ebe1;
+}
+
+/* Navigation Section */
+.nav {
+    display: flex;
+    justify-content: space-between;  /* Pushes elements to both extremes */
+    align-items: center;
+    padding: 0 20px; /* Space around navbar */
+    background-color: #7e9a8d;
+    box-shadow: 0 6px 8px 2px rgba(0, 0, 0, 0.2);
+    margin-left: -20px;
+}
+
+/* Logo Styling */
+.logo {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;  /* Minimal gap between logo and nav links */
+}
+
+.logo img {
+    height: 4.5rem;
+    width: auto;
+    margin-left: 0;  /* Ensure the logo is aligned to the extreme left */
+}
+
+/* Navigation Links */
+nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    gap: 20px; /* Space between nav links */
+    margin-left: -55em;
+}
+
+nav ul li {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    font-weight: light;
+    padding: 8px 15px;
+    transition: all 0.3s;
+}
+
+nav ul li a:hover {
+    font-weight: bold; /* Increased font weight on hover */
+}
+
+/* Authentication Buttons */
+#auth-buttons {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    margin-left: auto; /* Push authentication buttons to the right */
+}
+
+.login-btn {
+    text-decoration: none;
+    color: black;
+    font-size: 1.3rem;
+    font-weight: 550;
+}
+
+.signup-btn {
+    text-decoration: none;
+    padding: 12px 17px;
+    font-size: 1.3rem;
+    font-weight: 550;
+    border-radius: 12px;
+    background-color: #E1B12A;
+    color: black;
+    border: none;
+}
+
+.signup-btn:hover {
+    background-color: #ecb213;
+}
+
+/* Main Body */
+h1 {
+    margin-top: 40px;
+    margin-bottom: 60px;
+    font-size: 5rem;
+    color: #333;
+    text-align: center;
+    font-family: "Kaushan Script", cursive;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.card {
+    background-color: #f1f3e8;
+    width: 580px;
+    height: 250px;
+    padding: 20px;
+    padding-bottom: 50px;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h2 {
+    margin-bottom: 20px;
+    font-size: 4rem;
+    font-family: "Playfair Display", serif;
+    text-align: center;
+    color: #1d2d35;
+}
+
+.card img {
+    width: 11rem;
+    height: auto;
+}
+
+.bottom-center {
+    margin-top: 30px;
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.login-btn {
+    text-decoration: none;
+    color: black;
+    font-size: 1.3rem;
+    font-weight: 550;
+}
+
+.signup-btnn {
+    text-decoration: none;
+    padding: 12px 17px;
+    font-size: 1.3rem;
+    font-weight: 550;
+    border-radius: 12px;
+    background-color: #E1B12A;
+    color: black;
+    border: none;
+}
+
+.logOut {
+    background-color: #ecc115; /* Yellow background color */
+    border: 1px solid #ecc115; /* Darker yellow border */
+    padding: 6px 12px; /* Padding around the text */
+    font-size: 14px; /* Font size */
+    font-weight: bolder;
+    font-family: Arial, sans-serif; /* Font style */
+    text-transform: uppercase; /* Make text uppercase */
+    cursor: pointer; /* Pointer cursor on hover */
+    border-radius: 10px; /* Rounded corners */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth hover effects */
+    margin-right: 5px;
+}
+  
+.logOut:hover {
+    background-color: #FFCC00; /* Darker yellow background on hover */
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+  
+.logOut:focus {
+    outline: none; /* Remove focus outline */
+}

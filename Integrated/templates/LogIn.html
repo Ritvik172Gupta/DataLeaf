@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- allow Google’s iframe to talk back to your page -->
+    <meta http-equiv="Cross-Origin-Opener-Policy" content="same-origin">
+    <meta http-equiv="Cross-Origin-Embedder-Policy" content="require-corp">
+    <title>Dataleaf - Empowering Your Text</title>
+    <link rel="icon" href="{{ url_for('static', filename='Resources/ICONS/favicon-removebg-preview.png') }}" type="image/x-icon">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styleLI.css') }}">
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <script src="{{ url_for('static', filename='script.js') }}" defer></script>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <section class="nav">
+        <div class="logo">
+            <a href="{{ url_for('home') }}"><img src="{{ url_for('static', filename='Resources/LOGO/DATALEAF_LOGO.jpeg') }}" alt="Dataleaf Logo" class="Logo"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('PDFS') }}">PDF Summarizer</a></li>
+                <li><a href="{{ url_for('GrammarC')}}">Grammar Corrector</a></li>
+                <li><a href="{{ url_for('SentimentA')}}">Sentiment Analysis</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+        <div class="auth-buttons">
+            <a href="{{ url_for('LogIn')}}" class="login-btn">Login</a>
+            <a href="{{ url_for('SignUp')}}" class="signup-btnn">Sign Up</a>
+        </div>
+        <div class="namess">
+        </div>
+    </section>
+
+    <!-- Login Form Section -->
+<section class="form-section">
+    <div class="login-container">
+        <h1>Login</h1>
+        <span class="sub-heading">Login To Your Existing Account</span>
+        <div class="empty-space"></div>
+        <!-- Begin Form -->
+        <form id="login-form" onsubmit="event.preventDefault(); login();">
+            <label for="email">Email ID</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            
+            <label for="password">Password</label>
+            <div class="password-container">
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                <span class="toggle-password">👁️</span>
+            </div>
+            
+            <a href="#" class="forgot-password">Forgot Password?</a>
+            
+            <button type="submit" class="login-btnn">Login</button>
+            <div class="signup-link">
+                Do Not Have An Account? <a href="{{ url_for('SignUp') }}">Sign Up</a>
+            </div>
+        </form>
+        <!-- End Form -->
+
+        <div class="divider">
+                <hr /><span>or</span>
+                <hr />
+            </div>
+
+        <!-- this is where we’ll render the button -->
+        <div id="google-signin-btn"></div>
+    
+
+
+    </div>
+</section>
+    
+</body>
+
+</html>
