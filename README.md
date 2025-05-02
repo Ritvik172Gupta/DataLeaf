@@ -99,9 +99,23 @@ Each module has a dedicated interface inside the `Webpage/` folder:
 
 ## 📌 To-Do / Enhancements
 
-* [ ] Real-time grammar correction on frontend
-* [ ] Add file download option for generated summaries
-* [ ] Implement login and user history (optional future scope)
+ * [ ] Real-time grammar correction on frontend
+
+ * [ ] Add file download option for generated summaries
+
+ * [ ] Implement login and user history (optional future scope)
+
+ * [ ] Full grammar error coverage using deep contextual models
+
+ * [ ] Reduce dependence on external APIs by enhancing local NLP models
+
+ * [ ] Multilingual document summarization and sentiment analysis
+
+ * [ ] Real-time voice interaction (speech-to-text + LLM-based replies)
+
+ * [ ] Mobile application extension for Android/iOS
+
+ * [ ] Feedback-driven model improvement system based on user ratings
 
 ---
 ## 📸 Output Results Showcase
