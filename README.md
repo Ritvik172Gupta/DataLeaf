@@ -195,8 +195,8 @@ The login page provides returning users access to the platform. It supports auth
 
 ---
 
-##🙏 Special Thanks
-We extend our heartfelt gratitude to Dr. Sahinur Rahman Laskar, Assistant Professor, University of Petroleum and Energy Studies (UPES), for his unwavering guidance, insightful feedback, and continuous encouragement throughout the development of DataLeaf. His deep expertise in natural language technologies and dedication to academic excellence were instrumental in refining our vision and technical approach.
+## 🙏 Special Thanks
+We extend our heartfelt gratitude to **Dr. Sahinur Rahman Laskar**, Assistant Professor, University of Petroleum and Energy Studies (UPES), for his unwavering guidance, insightful feedback, and continuous encouragement throughout the development of DataLeaf. His deep expertise in natural language technologies and dedication to academic excellence were instrumental in refining our vision and technical approach.
 
 🔗 Connect on LinkedIn -- https://www.linkedin.com/in/dr-sahinur-rahman-laskar-0683ab1b0/
 
